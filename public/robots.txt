@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /storage/logs/
+
+Sitemap: https://warkopsky.com/sitemap.xml

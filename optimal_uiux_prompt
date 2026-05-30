@@ -1,0 +1,57 @@
+LAYER 1 — Aesthetic Direction (WAJIB)
+Before writing any code, commit to a bold aesthetic direction.
+Choose ONE of these tones and execute it with full conviction:
+
+- Brutalist/raw editorial
+- Luxury/refined minimal
+- Retro-futuristic
+- Organic/natural
+- Maximalist chaos
+- Industrial/utilitarian
+- Art deco/geometric
+
+Whatever you choose, make it UNFORGETTABLE.
+Ask yourself: "What's the ONE thing the user will remember about this UI?"
+
+LAYER 2 — Typography Rules
+Typography rules (STRICT):
+
+- NEVER use Inter, Roboto, Arial, or system fonts
+- Pick a DISTINCTIVE display font paired with a refined body font
+- Use Google Fonts or variable fonts
+- Typography should do visual heavy lifting
+- Examples of good pairings: Playfair Display + DM Serif,
+  Bebas Neue + Crimson Pro, Cabinet Grotesk + Lora
+
+LAYER 3 — Color & Composition
+Color & Layout rules:
+
+- NO purple gradients on white. NO generic blue CTAs.
+- Commit to a DOMINANT color with 1 sharp accent only
+- Use CSS variables for full consistency
+- Break the grid intentionally — asymmetry, overlapping elements,
+  diagonal flow, generous OR dense (pick one, go all in)
+- Backgrounds: use noise texture, gradient mesh, or layered
+  transparency — NEVER flat solid white or #f8f8f8
+
+LAYER 4 — Motion & Details
+Motion & micro-interaction rules:
+
+- ONE well-orchestrated page load with staggered reveals
+  (animation-delay) beats scattered animations everywhere
+- Hover states should SURPRISE the user
+- Add: grain overlay, dramatic shadows, decorative borders,
+  or custom cursor — pick what fits the aesthetic
+- Every detail must serve the conceptual direction
+
+LAYER 5 — The Anti-Generic Checklist (paste ini di akhir prompt)
+Before finalizing, run this checklist:
+[ ] Does it look like it could be from any random SaaS? → REDESIGN
+[ ] Did you use Inter or Roboto? → CHANGE FONT
+[ ] Is the background plain white or light gray? → ADD TEXTURE/CHARACTER  
+[ ] Are all cards the same size in a symmetric grid? → BREAK THE LAYOUT
+[ ] Does color feel "safe" and evenly distributed? → ADD DOMINANCE
+[ ] Could this be mistaken for a Tailwind UI template? → START OVER
+
+The goal: someone should be able to identify this brand
+just from the visual language, without reading any text.

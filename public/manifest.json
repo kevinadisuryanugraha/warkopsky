@@ -1,0 +1,22 @@
+{
+  "name": "Warkop Sky",
+  "short_name": "Warkop Sky",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0F1D",
+  "theme_color": "#0A0F1D",
+  "description": "Nongkrong Santai di Bawah Langit Malam Warkop Sky. Buka 24 Jam.",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/logo_192.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/images/logo_512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
