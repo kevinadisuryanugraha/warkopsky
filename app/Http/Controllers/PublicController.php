@@ -9,6 +9,7 @@ use App\Models\MenuItem;
 use App\Models\GalleryCategory;
 use App\Models\GalleryItem;
 use App\Models\CustomerStory;
+use App\Models\Event;
 use App\Services\SeoService;
 
 class PublicController extends Controller
@@ -92,4 +93,19 @@ class PublicController extends Controller
 
         return view('public.contact', compact('seoData'));
     }
+
+    public function events(SeoService $seo)
+    {
+        $seoData = $seo->set([
+            'title'       => 'Events & Agenda — Warkop Sky Jatiasih',
+            'description' => 'Cek agenda terbaru Warkop Sky: NOBAR, Live Music, Bakar-Bakaran, Promo spesial, dan masih banyak lagi. Jangan sampai ketinggalan!',
+        ])->toArray();
+
+        $events = Event::visible()->get();
+
+        $allEvents = Event::orderBy('event_date', 'desc')->get();
+
+        return view('public.events', compact('events', 'allEvents', 'seoData'));
+    }
 }
+

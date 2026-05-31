@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\StoryController;
 use App\Http\Controllers\Admin\ReservationController;
 use App\Http\Controllers\Admin\AnalyticsController;
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,7 @@ Route::middleware(['track-visitor'])->group(function () {
     Route::get('/stories', [PublicController::class, 'stories'])->name('public.stories');
     Route::get('/tentang', [PublicController::class, 'about'])->name('public.about');
     Route::get('/kontak', [PublicController::class, 'contact'])->name('public.contact');
+    Route::get('/events', [PublicController::class, 'events'])->name('public.events');
 });
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 
@@ -71,4 +73,7 @@ Route::middleware(['auth', 'prevent-back-history'])->prefix('admin')->name('admi
     Route::get('/reservations', [ReservationController::class, 'index'])->name('reservations.index');
     Route::patch('/reservations/{reservation}/status', [ReservationController::class, 'updateStatus'])->name('reservations.updateStatus');
     Route::delete('/reservations/{reservation}', [ReservationController::class, 'destroy'])->name('reservations.destroy');
+
+    // Events Management
+    Route::resource('events', EventController::class);
 });

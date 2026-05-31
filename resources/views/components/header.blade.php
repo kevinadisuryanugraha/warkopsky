@@ -11,6 +11,7 @@
             <a href="/menu" class="{{ request()->is('menu') ? 'active' : '' }}">Menu</a>
             <a href="/galeri" class="{{ request()->is('galeri') ? 'active' : '' }}">Galeri</a>
             <a href="/stories" class="{{ request()->is('stories') ? 'active' : '' }}">Stories</a>
+            <a href="/events" class="{{ request()->is('events') ? 'active' : '' }}">Events</a>
             <a href="/tentang" class="{{ request()->is('tentang') ? 'active' : '' }}">Tentang</a>
             <a href="/kontak" class="{{ request()->is('kontak') ? 'active' : '' }}">Kontak</a>
         </nav>
@@ -29,6 +30,7 @@
         <a href="/menu" class="{{ request()->is('menu') ? 'active' : '' }}">Menu</a>
         <a href="/galeri" class="{{ request()->is('galeri') ? 'active' : '' }}">Galeri</a>
         <a href="/stories" class="{{ request()->is('stories') ? 'active' : '' }}">Stories</a>
+        <a href="/events" class="{{ request()->is('events') ? 'active' : '' }}">Events</a>
         <a href="/tentang" class="{{ request()->is('tentang') ? 'active' : '' }}">Tentang</a>
         <a href="/kontak" class="{{ request()->is('kontak') ? 'active' : '' }}">Kontak</a>
     </div>
